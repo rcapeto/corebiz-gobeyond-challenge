@@ -57,9 +57,7 @@ export default function FormNews({ setSuccessRegister }) {
       <>
          <h2>Participe de nossas news com promoções e novidades!</h2>
          <form onSubmit={handleAddNewsletter} className={formError ? 'error' : ''}>
-
-           
-           <div className="input-block">
+            <div className="input-block">
                <input 
                   type="text" 
                   name="name"
@@ -68,28 +66,20 @@ export default function FormNews({ setSuccessRegister }) {
                   onChange={e => setName(e.target.value)}
                   className={nameError ? 'error' : ''}
                />
-
                {nameError && <p>Preencha com o seu nome completo</p>}
                {!nameError && emailError && <br />}
-
-           </div>
-
-
-          <div className="input-block">
-            <input 
-               type="text" 
-               name="email"
-               placeholder="Digite seu email"
-               value={email}
-               onChange={e => setEmail(e.target.value)}
-               className={emailError ? 'error' : ''}
-
-            />
-
-            {emailError && <p>Preencha com um e-mail válido</p> }
-
-          </div>
-
+            </div>
+            <div className="input-block">
+               <input 
+                  type="text" 
+                  name="email"
+                  placeholder="Digite seu email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  className={emailError ? 'error' : ''}
+               />
+               {emailError && <p>Preencha com um e-mail válido</p> }
+            </div>
             <button type="submit">Eu quero!</button>
          </form>
       </>

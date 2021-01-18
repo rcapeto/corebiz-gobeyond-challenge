@@ -22,7 +22,7 @@
    background-color: #F8475F;
 }
 
-.title-desktop {
+.banner-desktop {
    height: 300px;
    background: #000;
    position: relative;
@@ -31,7 +31,7 @@
    position: relative;
 }
 
-.title-desktop .background-black-image {
+.banner-desktop .background-black-image {
    height: 100%;
    color: #FFF;
    position: relative;
@@ -40,72 +40,72 @@
    justify-content: center;
 }
 
-.title-desktop .background-black-image img {
+.banner-desktop .background-black-image img {
    height: 100%;
    margin-left: 100px;
 }
 
-.title-desktop .background-black-image .titles {
+.banner-desktop .background-black-image .titles {
    position: absolute;
 }
 
-.title-desktop .background-black-image .titles h4 {
+.banner-desktop .background-black-image .titles h4 {
    font-size: 30px;
    line-height: 40px;
 }
 
-.title-desktop .background-black-image .titles h3 {
+.banner-desktop .background-black-image .titles h3 {
    font-size: 45px;
    line-height: 45px;
 }
 
-.title-desktop .image-title {
+.banner-desktop .image-title {
    margin-left: -60px;
 }
 
-.title-desktop .image-title img {
+.banner-desktop .image-title img {
    height: 100%;
    width: 100%;
    object-fit: cover;
 }
 
-main .title-mobile {
+main .banner-mobile {
    display: none;
 }
 
 @media(max-width: 1250px) {
-   .title-desktop .background-black-image img {
+   .banner-desktop .background-black-image img {
       margin-left: -60px;
    }
 }
 
 @media(max-width: 970px) {
-   .title-desktop .background-black-image img {
+   .banner-desktop .background-black-image img {
       margin-left: -100px;
    }
 }
 
 @media (max-width: 950px) {
-   .title-desktop{ 
+   .banner-desktop{ 
       display: none;
    }
 
-   main .title-mobile {
+   main .banner-mobile {
       background: url('../../assets/images/laptop.jpg') no-repeat;
       object-fit: cover;
-      height: 30rem;
+      height: 300px;
       position: relative;
       display: block;
    }
    
-   main .title-mobile .background-black {
+   main .banner-mobile .background-black {
       background: rgba(0, 0, 0, 0.5);
       position: absolute;
       width: 100%;
       height: 100%;
    }
    
-   main .title-mobile .titles {
+   main .banner-mobile .titles {
       width: 90%;
       height: 70%;
       margin: 2.3rem auto;   
@@ -117,13 +117,13 @@ main .title-mobile {
       flex-direction: column;
    }
    
-   main .title-mobile .titles h4 {
-      font-size: 3.0rem;
+   main .banner-mobile .titles h4 {
+      font-size: 30px;
       max-width: 300px;
    }
    
-   main .title-mobile .titles h3 {
-      font-size: 4.0rem;
+   main .banner-mobile .titles h3 {
+      font-size: 40px;
       max-width: 350px;
    }
 }

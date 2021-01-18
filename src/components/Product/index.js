@@ -9,8 +9,8 @@ export default function Product({ product, setProductsQuantity, productsQuantity
     setProductsQuantity(productsQuantity + 1);
   }
 
-   return(
-      <div className="product-content">
+  return(
+    <div className="product-content">
       {product.listPrice && (
         <div className="off">
           <p>OFF</p>
@@ -24,26 +24,29 @@ export default function Product({ product, setProductsQuantity, productsQuantity
       <Stars grade={product.stars}/>
 
       <div className="prices">
-        {product.listPrice ? (
-          <p className="old-price">
-            de R$ {transformPrice(product.listPrice)}
-          </p>
-        ): null}
+        {
+          product.listPrice ? (
+            <p className="old-price">
+              de R$ {transformPrice(product.listPrice)}
+            </p>
+            ) : null
+        }
 
         {!product.listPrice && <br/>}
 
         <p className="current-price">
           por R$ {transformPrice(product.price)}
         </p>
-        
+
       </div>
-    
+
       {product.installments.length > 0 ? (
         <p className="parcel">
           ou em {product.installments[0].quantity}x de R$ {transformPrice(product.installments[0].value)}
         </p>
-      ) : null}
+        ) : null
+      }
       <button className="button" onClick={handleAdd}>Comprar</button>
     </div>
-   );
+  );
 }

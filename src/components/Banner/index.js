@@ -23,7 +23,7 @@ export default function Banner() {
 
    return(
       <>
-      <div className="title-desktop">
+      <div className="banner-desktop">
           <div className="background-black-image"> 
             <div className="titles">
                 <h4>Olá, o que você está buscando?</h4>
@@ -50,7 +50,7 @@ export default function Banner() {
       
          {/* MOBILE */}
 
-        <div className="title-mobile">
+        <div className="banner-mobile">
           <div >
             <div className="background-black">
               <div className="titles">
