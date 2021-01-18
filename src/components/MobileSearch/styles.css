@@ -1,0 +1,28 @@
+.mobile-search {
+   border-bottom: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 90%;
+   margin: 0 auto;
+   margin-bottom: 2rem;
+}
+
+.mobile-search svg {
+   cursor: pointer;
+}
+
+.mobile-search input {
+   padding: 1.6rem;
+   width: 80%;
+   border: none;
+   font-size: 1.6rem;
+   color: #7a7a7a;
+   outline: 0;
+}
+
+@media (min-width: 950px) {
+   .mobile-search {
+      display: none;
+   }
+}

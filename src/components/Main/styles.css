@@ -1,0 +1,35 @@
+.sales {
+   padding: 2rem;
+}
+
+.sales h2 {
+   color: #000;
+   font-weight: 900;
+   font-family: Nunito;
+   font-size: 27px;
+   position: relative;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.sales h2::after {
+   background: #c0c0c0;
+   content: '';
+   position: absolute;
+   bottom: -12px;
+   left: 0;
+   width: 65px;
+   height: 3px;
+}
+
+.form-news {
+   background: #f2f2f2;
+   padding: 26px 0px 36px 0;
+   font-family: Lato;
+}
+
+@media (max-width: 350px) {
+   .form-news {
+      padding: 10px;
+   }
+}

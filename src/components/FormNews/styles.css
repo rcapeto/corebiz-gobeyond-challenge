@@ -1,0 +1,109 @@
+.form-news h2 {
+   font-weight: bold;
+   font-size: 22px;
+   text-align: center;
+   color: #333333;
+   line-height: 4.0rem;
+   margin-bottom: 3rem;
+}
+
+.form-news form {
+   display: flex;
+   padding: 0 2.2rem;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-news .input-block {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   margin-right: 8px;
+}
+
+.form-news form input {
+   background-color: #FFF;
+   border: none;
+   border-radius: 8px;
+   color: #585858;
+   font-weight: bold;
+   outline: 0;
+   position: relative;
+   width: 280px;
+   height: 48px;
+   font-size: 12px;
+   padding: 17px 16px;
+}
+
+.form-news form input:focus {
+   border: 1px solid #333333;
+}
+
+.form-news .input-block p {
+   color: #F8475F;
+   font-size: 12px;
+   margin-left: 5px;
+   margin-top: 8px;
+}
+
+.form-news form button {
+   background-color: #000;
+   color: #FFF;
+   font-weight: bold;
+   border-radius: 0.8rem;
+   border: none;
+   cursor: pointer;
+   font-size: 14px;
+   transition: opacity 200ms;   
+   width: 140px;
+   height: 48px;
+   outline: 0;
+}
+
+.form-news form button:hover {
+   opacity: 0.7;
+}
+
+.form-news form.error input.error {
+   border: 1px solid #F8475F;
+}
+
+.form-news form.error button {
+   margin-top: -20px;
+}
+
+@media (max-width: 950px) {
+   .form-news form {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+   }
+
+   .form-news .input-block {
+      width: 100%;
+      margin-bottom: 22px;
+   }
+   
+   .form-news form input {
+      width: 100%;
+   }
+
+   .form-news form button { 
+      width: 100%;
+   }
+
+   .form-news form.error button {
+      margin-top: 3px;
+   }
+}
+
+@media (max-width: 350px) {
+   .form-news h2 {
+      font-size: 2.7rem;
+      text-align: center;
+   }
+
+   .form-news form {
+      padding: 0 1rem;
+   }
+}

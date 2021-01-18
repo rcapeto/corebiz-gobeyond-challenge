@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Main from './components/Main';
+import MobileSearch from './components/MobileSearch';
+
+export default function App() {
+  const [productsQuantity, setProductsQuantity] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main-page">
+      <Header productsQuantity={productsQuantity}/>
+      <MobileSearch />
+      <Main setProductsQuantity={setProductsQuantity} productsQuantity={productsQuantity}/>
+      <Footer />
     </div>
   );
 }
-
-export default App;

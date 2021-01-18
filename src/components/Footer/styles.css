@@ -1,0 +1,126 @@
+footer {
+   background-color: #000;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 25px 0;
+}
+
+footer .address {
+   color: #FFF;
+}
+
+footer .address h3 {
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 27px;
+}
+
+footer .address h3::after {
+   content: '';
+   display: block;
+   background-color: #FFF;
+   height: 5px;
+   width: 45px;
+   margin-top: 16px;
+   margin-bottom: 20px;
+}
+
+footer .address p,
+footer .address a {
+   display: block;
+   color: #FFF;
+   text-decoration: none;
+   font-size: 13px;
+   line-height: 12px;
+   margin-bottom: 16px;
+   transition: filter ease-in-out 0.3s;
+}
+
+footer .address a:hover {
+  filter: brightness(0.6);
+}
+
+footer .contact ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   flex-direction: column;
+}
+
+footer .contact ul li {
+   background-color: #FFF;
+   margin-bottom: 25px;
+   width: 195px;
+   min-height: 38px;
+   text-align: center;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   cursor: pointer;
+   transition: filter ease-in-out 0.3s;
+}
+
+footer .contact ul li:hover {
+  filter: brightness(0.6);
+}
+
+footer .contact ul li:last-child img {
+   margin-left: 20px;
+}
+
+footer .contact ul li + li {
+   margin-bottom: 0;
+}
+
+footer .contact ul li a {
+   text-transform: uppercase;
+   font-size: 12px;
+   color: #000;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+footer .created {
+   color: #FFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer .created div {
+   font-size: 10px;
+   font-weight: normal;
+}
+
+footer .created div:first-child {
+   margin-right: 36px;
+}
+
+@media screen and (max-width: 640px) {
+   footer {
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;   
+      padding-top: 27px; 
+      padding-left: 17px; 
+   }
+
+   footer .contact {
+     margin: 27px auto;
+   }
+
+   footer .contact ul {
+      display: flex;
+   }  
+
+   footer .created {
+      margin: 0 auto;
+      width: 224px;
+      justify-content: space-between;
+   }
+}
