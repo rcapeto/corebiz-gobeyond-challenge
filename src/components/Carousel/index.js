@@ -8,7 +8,7 @@ export default function Carousel({ products, setProductsQuantity, productsQuanti
    const [marginLeft, setMarginLeft] = useState(0);
 
    function carouselNext() {
-      let x = marginLeft - 200;
+      let x = marginLeft - 250;
 
       const listWidth = products.length * 250;
 
@@ -20,7 +20,7 @@ export default function Carousel({ products, setProductsQuantity, productsQuanti
    }
 
    function carouselPrev() {
-      let x = marginLeft + 200;
+      let x = marginLeft + 250;
 
       if(x > 0) x = 0;
 
